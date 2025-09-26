@@ -1,3 +1,8 @@
+/* Pink background for the website */
+body {
+  background-color: #ffc0cb; /* light pink */
+}
+
 /* Override CSS for site title to ensure it appears as plain text */
 .site-header {
   padding: 1rem 0;
