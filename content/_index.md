@@ -1,39 +1,19 @@
-{{ define "main" }}
+---
+title: "DevOps_Class_Project"
+---
 
-<div class="container">
-  <article class="post">
-    <header class="post-header">
-      <h1>{{ .Title }}</h1>
-      <div class="post-meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        {{ if .Params.tags }}
-        <div class="tags">
-          {{ range .Params.tags }}
-          <span class="tag">{{ . }}</span>
-          {{ end }}
-        </div>
-        {{ end }}
-      </div>
-    </header>
-    
-    <div class="post-content">
-      {{ .Content }}
-    </div>
-    
-    <footer class="post-footer">
-      <div class="nav-links">
-        {{ if .NextInSection }}
-        <div class="nav-prev">
-          <a href="{{ .NextInSection.Permalink }}">&larr; {{ .NextInSection.Title }}</a>
-        </div>
-        {{ end }}
-        {{ if .PrevInSection }}
-        <div class="nav-next">
-          <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }} &rarr;</a>
-        </div>
-        {{ end }}
-      </div>
-    </footer>
-  </article>
-</div>
-{{ end }}
+# Welcome to My DevOps Blog
+
+Start your DevOps journey now! This blog contains insights, tutorials, and experiences from my DevOps learning path.
+
+## About This Blog
+
+This blog covers various DevOps topics including:
+
+- Kubernetes deployments and management
+- CI/CD pipelines and automation
+- Infrastructure as Code
+- Container orchestration
+- Cloud technologies
+
+Explore the posts below to learn more about these exciting technologies!
